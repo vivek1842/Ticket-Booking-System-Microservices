@@ -20,9 +20,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 @RequestMapping("/api/v1")
 public class InventoryController {
 
+    @Autowired
     private InventoryService inventoryService;
 
-    @Autowired
     public InventoryController(final InventoryService inventoryService) {
         this.inventoryService = inventoryService;
     }

@@ -16,10 +16,12 @@ import com.example.tbs.inventoryservice.response.VenueInventoryResponse;
 @Service
 public class InventoryService {
 
+    @Autowired
     private final EventRepository eventRepository;
+
+    @Autowired
     private final VenueRepository venueRepository;
     
-    @Autowired
     public InventoryService(final EventRepository eventRepository, final VenueRepository venueRepository) {
         this.eventRepository = eventRepository;
         this.venueRepository = venueRepository;
